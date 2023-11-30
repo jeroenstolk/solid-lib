@@ -15,11 +15,13 @@ export default defineConfig({
     port: 3000,
   },
   build: {
+    rollupOptions: { external: ["solid-js"] },
     target: "esnext",
     lib: {
       entry: "./src/lib/index.ts",
-      name: "my-lib",
-      fileName: (format) => `my-lib.${format}.js`,
+      name: "bifrostSolidLib",
+      fileName: "bifrost-solid-lib",
+      formats: ["es", "umd"],
     },
   },
 });

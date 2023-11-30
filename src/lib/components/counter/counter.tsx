@@ -1,8 +1,7 @@
 import { createSignal } from "solid-js";
-import { customElement } from "solid-element";
 
 const style = `div * {
-          font-size: 200%;
+          font-size: 100%;
         }
 
         span {
@@ -20,14 +19,14 @@ const style = `div * {
           color: white;
         }`;
 
-customElement("my-counter", () => {
+export const Counter = () => {
   const [count, setCount] = createSignal(0);
   return (
     <div>
       <style>{style}</style>
       <button onClick={() => setCount(count() - 1)}>-</button>
-      <span>{count}</span>
+      <span>{count()}</span>
       <button onClick={() => setCount(count() + 1)}>+</button>
     </div>
   );
-});
+};

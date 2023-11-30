@@ -1,2 +1,3 @@
-import { default as Counter } from "./components/counter/counter.jsx";
+import { Counter } from "./components/counter/counter.tsx";
+
 export { Counter };

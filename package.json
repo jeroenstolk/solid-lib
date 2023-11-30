@@ -18,6 +18,8 @@
   "dependencies": {
     "babel-preset-solid": "^1.8.6",
     "solid-element": "^1.8.0",
-    "solid-js": "^1.8.6"
+    "solid-js": "^1.8.6",
+    "bifrost-solid-lib": "src/assets/bifrost-solid-lib.umd.js"
   }
 }
+ 
